@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/skill.css') }}">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/saturn.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+  <div class="skill-header">
+    <h1 class="skill-title">My Skills</h1>
+  </div>
+
+  <div class="skills-container">
+    <!-- Left container -->
+    <div class="skills-box">
+      <h2 class="skills-heading">Programming Language's</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/html5.png') }}" alt="HTML5">
+          <span>HTML5</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/css3.png') }}" alt="CSS3">
+          <span>CSS3</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/bootstrap.png') }}" alt="Bootstrap">
+          <span>BOOTSTRAP</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/js.png') }}" alt="Javascript">
+          <span>JAVASCRIPT</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/react.png') }}" alt="React">
+          <span>REACT</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python">
+          <span>PYTHON</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/flask.jpg') }}" alt="Flask">
+          <span>Flask</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/sql.png') }}" alt="SQL">
+          <span>SQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right container -->
+    <div class="skills-box">
+      <h2 class="skills-heading">Tools & Technologies</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/vscode.png') }}" alt="VS Code">
+          <span>VS Code</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub">
+          <span>GitHub</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/figma.png') }}" alt="Figma">
+          <span>Figma</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/mysql.png') }}" alt="Mysql">
+          <span>MySql</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/postman.png') }}" alt="Postman">
+          <span>Postman</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/word.png') }}" alt="Word">
+          <span>Word</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/excel.png') }}" alt="Excel">
+          <span>Excel</span>
+        </div>
+        <div class="skill-item">
+          <img src="{{ url_for('static', filename='images/ppt.png') }}" alt="Ppt">
+          <span>Ppt</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

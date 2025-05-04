@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificates - Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/certificate.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('certificate') }}">Certificate</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/try.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="certificate-header">
+  <h1 class="certificate-title">My Certificates</h1>
+  </div>
+  
+  <div class="certificate-container">
+      <!-- Left Box -->
+      <div class="certificate-card">
+        <h1 class="type-text" id="title1">Python Fullstack Developer</h1>
+        <h2 class="type-text" id="center1">Besant Technology</h2>
+        <h3 class="type-text" id="stack1">HTML5, CSS3, JS, React, Bootstrap, Python, Flask</h3>
+        <p class="type-text" id="desc1">Completed a full-fledged Python Fullstack course covering frontend and backend development with real-time projects and case studies.</p>
+        <p class="type-text" id="loc1"><a href="https://maps.google.com" target="_blank">Location: Bangalore</a></p>
+        <p class="type-text" id="dur1">Duration: 6 Months</p>
+        <a href="https://drive.google.com/file/d/1YYeHiCAB3iF99eUXG9kO5ZtGJG4slM3M/view?usp=drive_link" target="_blank" class="download-btn glow-btn">Download Certificate</a>
+      </div>
+
+      <!-- Right Box -->
+      <div class="certificate-card">
+        <h1 class="type-text" id="title2">Masters in Programming</h1>
+        <h2 class="type-text" id="center2">CAAD Training Service</h2>
+        <h3 class="type-text" id="stack2">C, C++, Python, Java, Tally.ERP9</h3>
+        <p class="type-text" id="desc2">Learned design thinking, interface building, user journey planning, and interactive prototyping with live assignments and certifications.</p>
+        <p class="type-text" id="loc2"><a href="https://maps.google.com" target="_blank">Location: TamilNadu</a></p>
+        <p class="type-text" id="dur2">Duration: 3 Months</p>
+        <a href="https://drive.google.com/file/d/1Ym5JPvJ7t_quOe4rtQ4x1nHh1LcYLyy2/view?usp=drive_link" target="_blank" class="download-btn glow-btn">Download Certificate</a>
+      </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/certificate.js') }}"></script>
+</body>
+</html>
+

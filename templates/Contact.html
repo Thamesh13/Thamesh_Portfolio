@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/chip.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+  <div class="contact-container">
+    <!-- Left Info -->
+    <div class="contact-left">
+      <h1 class="experience-title">Contact Me</h1>
+      <h3 id="name">Name: Thamesh V</h3>
+      <h3 id="email">Email: thamesh13082002@gmail.com</h3>
+      <h3 id="mobile">Mobile: +91 9629863930</h3>
+
+      <div class="social-icons">
+        <a href="https://Wa.me/+919629863930" target="_blank"><img src="{{ url_for('static', filename='images/whatsapp.png') }}" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/v.thamesh?igsh=MWg5ZGp6cnpiYWdzaA==" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+        <a href="https://github.com/Thamesh13" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/thamesh-v-196b34188" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+        <a href="https://facebook.com" target="_blank"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook"></a>
+        <a href="https://youtube.com" target="_blank"><img src="{{ url_for('static', filename='images/youtube.png') }}" alt="YouTube"></a>
+      </div>
+
+      <p id="thanks">Thank you for visiting my portfolio!</p>
+    </div>
+
+    <!-- Right Map -->
+    <div class="contact-right">
+      <a href="https://maps.google.com" target="_blank">
+        <img src="{{ url_for('static', filename='images/map.jpg') }}" alt="Map Location" class="map-image" style="text-decoration: none; color: white; justify-content: center;">Current location
+      </a>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience - Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/experience.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/ray.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="experience-container">
+    <h1 class="experience-title">My Experience</h1>
+    <h2 id="exp-company" class="typing-blue indent-5">SMART Q</h2>
+    <h3 id="exp-duration" class="typing-blue indent-2">1 Year 7 Month's:</h3>
+    <h5 id="exp-role" class="typing-blue">Operation Executive (Customer Engagement & Support)</h5>
+    <ul class="experience-list">
+      <li>Provided customer support by effectively resolving queries and ensuring high customer satisfaction.</li>
+      <li>Built and maintained strong relationships with clients to enhance service experience.</li>
+      <li>Delivered technical support, including updates and maintenance of various trackers such as Consumption Tracker, Sales Tracker, MIS Tracker, and Operations Tracker.</li>
+      <li>Ensured timely processing of payment refunds and maintained accurate records.</li>
+      <li>Handled end-to-end operations in a fast-paced environment.</li>
+      <li>Managed coordination between multiple departments.</li>
+      <li>Monitored KPIs and reported progress regularly.</li>
+      <li>Assisted in training new team members.</li>
+    </ul>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/experience.js') }}"></script>
+</body>
+</html>

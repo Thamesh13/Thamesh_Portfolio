@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/watch.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+  <div class="projects-container">
+    <h1 class="experience-title">My Projects</h1>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="project-card">
+        <img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="Project 1">
+        <h2>Smart Expense Tracker</h2>
+        <p>A personal finance management tool to track and categorize daily expenses using Flask and SQLite.</p>
+        <ul>
+          <li>HTML5,CSS3,JS,BOOTSTRAP</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>SQLite3</li>
+        </ul>
+        <div class="card-links">
+          <a href="https://www.linkedin.com/in/thamesh-v-196b34188" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Thamesh13/Smart-Expense-Management-Using-Flask-.git" target="_blank" >GitHub</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card">
+        <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2">
+        <h2>Portfolio Website</h2>
+        <p>A responsive and interactive portfolio to showcase web design and development skills.</p>
+        <ul>
+          <li>HTML5,CSS3,JS,BOOTSTRAP</li>
+          <li>Python</li>
+          <li>Flask</li>
+        </ul>
+        <div class="card-links">
+          <a href="https://www.linkedin.com/in/thamesh-v-196b34188" target="_blank" >LinkedIn</a>
+          <a href="https://github.com/Thamesh13" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card">
+        <img src="{{ url_for('static', filename='images/project3.jpg') }}" alt="Project 3">
+        <h2>Ajio Shopping site</h2>
+        <p>Employee Management System: Developed a dynamic and interactive Employee Management system
+          using React, featuring functionalities for adding, viewing, editing, and deleting employee records.
+          Integrated with a backend API to manage data</p>
+        <ul>
+          <li>HTML5,CSS3,BOOTSTRAP,JS</li>
+          <li>REACT</li>
+          <li>SQL</li>
+        </ul>
+        <div class="card-links">
+          <a href="https://www.linkedin.com/in/thamesh-v-196b34188" target="_blank" >LinkedIn</a>
+          <a href="https://github.com/Thamesh13/Ajio-Shopping-Site.git" target="_blank" >GitHub</a>
+        </div> 
+        </div>
+
+      <!-- Card 4 -->
+      <div class="project-card">
+        <img src="{{ url_for('static', filename='images/project4.jpg') }}" alt="Project 3">
+        <h2>Innovative Web Design</h2>
+        <p>Real-time weather updates with search functionality and API integration for cities worldwide.</p>
+        <ul>
+          <li>HTML5,CSS3,BOOTSTRAP,JS</li>
+          <li>Python</li>
+          <li>SQLite3</li>
+        </ul>
+        <div class="card-links">
+          <a href="https://www.linkedin.com/in/thamesh-v-196b34188" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Thamesh13" target="_blank">GitHub</a>
+        </div>
+        </div>
+
+    </div>
+  </div>
+</body>
+</html>

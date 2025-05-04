@@ -1,0 +1,171 @@
+body {
+    margin: -120px 0px 77%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, lightgray, white);
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding-top: 100px;
+  }
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+    opacity: 2.1;
+    z-index: -1;
+}
+
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent; /* optional: semi-transparent */
+    padding: 20px;
+    z-index: 1000; /* ensures navbar stays on top */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    background:white;
+    border-radius: 27px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(50px);
+    }
+  
+  .navbar li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+    background: linear-gradient(to right, #1e90ff, #00bfff);
+    color: white;
+  
+  }
+
+.projects-container {
+  padding: 100px 60px 60px;
+}
+
+.experience-title {
+    transition: transform 0.3s ease, background 0.3s ease;
+    background: linear-gradient(to left, #3498db, #8e44ad);
+    border: 2px solid #3498db;
+    padding: 8px 16px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    border-radius: 32px;
+    margin-right: 78%;
+}
+  
+.experience-title:hover {
+  /* font-size: 2.2rem; */
+  font-weight: bold;
+  color:#8e44ad;
+  transform: scale(1.05);
+  padding: 8px 16px;
+  border:none;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.project-card {
+  flex: 1 1 30%;
+  background: #ffffff20;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card h2,
+.project-card p,
+.project-card ul,
+.project-card .card-links a {
+  transition: transform 0.3s ease;
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  background: linear-gradient(to left, #3498db, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: white; */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: skyblue;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+  color: lightgray;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-links a {
+  background: linear-gradient(to right, #1e90ff, #00bfff);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(50px);
+}
+.card-links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+}
+
+
+.project-card:hover img,
+.project-card:hover h2,
+.project-card:hover p,
+.project-card:hover .card-links a {
+  transform: scale(1.05);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education - Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/education.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('certificate') }}">Certificate</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/prog.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="education-container">
+    <h1 class="experience-title">My Education</h1>
+
+    <div class="timeline">
+      <div class="line"></div>
+
+      <div class="milestone" style="left: 0%;">
+        <span class="year">2018</span>
+        <div class="point"></div>
+        <div class="info">
+          <h3>10th Std</h3>
+          <h4>GHSS School</h4>
+          <h5>88.80%</h5>
+          <p>Tiruvannamalai, Tamil Nadu</p>
+        </div>
+      </div>
+
+      <div class="milestone" style="left: 45%;">
+        <span class="year">2020</span>
+        <div class="point"></div>
+        <div class="info">
+          <h3>12th Std</h3>
+          <h4>GHSS School</h4>
+          <h5>71.16%</h5>
+          <p>Tiruvannamalai, Tamil Nadu</p>
+        </div>
+      </div>
+
+      <div class="milestone" style="left: 90%;">
+        <span class="year">2023</span>
+        <div class="point"></div>
+        <div class="info">
+          <h3>B.A Defence</h3>
+          <h4>Voorhees College</h4>
+          <h5>74.60%</h5>
+          <p>Vellore, Tamil Nadu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/education.js') }}"></script>
+</body>
+</html>

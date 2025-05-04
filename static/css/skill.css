@@ -1,0 +1,173 @@
+body {
+    margin: 0 0 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, lightgray, white);
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding-top: 80px;
+  }
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 163%;
+    object-fit: cover;
+    opacity: 2.1;
+    z-index: -1;
+}
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent; /* optional: semi-transparent */
+    padding: 20px;
+    z-index: 1000; /* ensures navbar stays on top */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    background:white;
+    border-radius: 27px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(50px);
+  }
+  
+  .navbar li a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+      background: linear-gradient(to right, #1e90ff, #00bfff);
+    color: white;
+  
+  }
+
+.skill-header {
+    padding: 0px 60px 0px;
+
+  }
+  .skill-title {
+    transition: transform 0.3s ease, background 0.3s ease;
+    background: linear-gradient(to left, #3498db, #8e44ad);
+    border: 2px solid #3498db;
+    padding: 8px 16px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    border-radius: 32px;
+    margin-right: 78%;
+}
+  
+.skill-title:hover:hover {
+  /* font-size: 2.2rem; */
+  font-weight: bold;
+  color:#8e44ad;
+  transform: scale(1.05);
+  padding: 8px 16px;
+  border:none;
+}
+
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    
+  }
+  .skills-box {
+    flex: 1 1 45%;
+    background-color: #ffffff20;
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);  
+  }
+
+  .skills-box:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);  
+  }
+  .skills-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background: linear-gradient(to right, #1e90ff, lightblue);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 27px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    }
+  .skills-heading:hover {
+    background: linear-gradient(to right, gray, white);    
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+    color: black;
+  }
+  .skills-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 27px;
+    background: linear-gradient(to right, gray, white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);  
+  }
+  .skill-item:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+    background: #ffffff15;
+  }
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  .skill-item span {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  .skill-item:hover img,
+  .skill-item:hover span {
+    transform: scale(1.1);
+    color: #1e90ff;
+  }
+  /* .skill-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.267);
+    background: #ffffff15;
+    
+  } */
+  

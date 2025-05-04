@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thamesh Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Me</a></li>
+      <li><a href="{{ url_for('skills') }}">Skill & Tools</a></li>
+      <li><a href="{{ url_for('experience') }}">Experience</a></li>
+      <li><a href="{{ url_for('projects') }}">Project's</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <video autoplay muted loop class="background-video">
+    <source src="{{ url_for('static', filename='videos/triangle.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  
+
+  <div class="main-container">
+    <div class="left-side">
+      <h1 id="typing-header">Hello, I'm <span class="gradient-text">Thamesh V.</span></h1>
+      <h2 id="typing-subtitle"></h2>
+      <p id="animated-paragraph">I am passionate about building intuitive, responsive, and beautiful web interfaces. My background in fullstack development allows me to create complete web solutions with clean code and modern tools.
+        Also, I like to thrive in a professional environment by excelling in any assigned task and demonstrating my skill
+        to the maximum. I wish to work in an environment, which enables me to demonstrate my knowledge and
+        profciency which would help me and my organisation to grow.
+      </p>
+      <a href="https://drive.google.com/file/d/1Q8yt33QT5baac1VZtuuZGGsJpepOrUR2/view?usp=drive_link" target="_blank" class="download-btn">Download CV</a>
+    </div>
+
+    <div class="right-side">
+      <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Thamesh" class="profile-pic"/>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+</body>
+</html>
